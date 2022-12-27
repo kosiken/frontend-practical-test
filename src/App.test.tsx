@@ -2,8 +2,26 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+global.IntersectionObserver = class IntersectionObserver {
+  constructor() {}
+
+  observe() {
+    return null;
+  }
+
+  disconnect() {
+    return null;
+  };
+
+  unobserve() {
+    return null;
+  }
+};
+
+describe('renders page', () => {
+  it('renders the text element', () => {
+      render(<App />);
+      const  textElement = screen.getByText('Minimalist Room')
+      expect(textElement).toBeInTheDocument();
+  })
 });
