@@ -2,8 +2,7 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-global.IntersectionObserver = class IntersectionObserver {
-  constructor() {}
+global.IntersectionObserver =( class IntersectionObserver {
 
   observe() {
     return null;
@@ -16,7 +15,7 @@ global.IntersectionObserver = class IntersectionObserver {
   unobserve() {
     return null;
   }
-};
+}) as any
 
 describe('renders page', () => {
   it('renders the text element', () => {
