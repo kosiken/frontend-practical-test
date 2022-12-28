@@ -14,7 +14,7 @@ function App() {
         <h3 className="font-bold text-[56px] text-center mb-[40px]">
         Minimalist Room 
         </h3>
-        <p className="text-center max-w-[520px]">
+        <p className="text-center max-w-[518px] text-[18px font-[400]">
         It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
         </p>
       </div>
