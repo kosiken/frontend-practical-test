@@ -4,10 +4,10 @@ interface ImageProps extends React.DetailedHTMLProps<React.ImgHTMLAttributes<HTM
 
 }
 
-const Image: React.FC<ImageProps> = (props) => {
+const Image: React.FC<ImageProps> = ({alt, ...props}) => {
     return (
         <LazyLoad className="h-full" threshold={0.80}>
-            <img {...props} />
+            <img {...props} alt={alt} />
         </LazyLoad>
 
     )
