@@ -1,5 +1,6 @@
 # Frontend Test
 
+[site](https://kosy-frontend-practical-test.netlify.app/)
 
 
 ### Technologies used
@@ -12,3 +13,4 @@
 ### Author
 
 [Kosisochukwu Allison](https://github.com/kosiken)
+
