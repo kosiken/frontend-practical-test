@@ -6,7 +6,7 @@ describe('renders header', () => {
     it('renders without failing', () => {
         render(<Header />);
     })
-    it('renders the header link', () => {
+    it('should render the header', () => {
         render(<Header />);
         const  linkElement = screen.getByText('Home')
         expect(linkElement).toBeInTheDocument();

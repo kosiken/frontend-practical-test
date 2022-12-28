@@ -18,9 +18,9 @@ global.IntersectionObserver =( class IntersectionObserver {
 }) as any
 
 describe('renders page', () => {
-  it('renders the text element', () => {
+  it('should render the App without failing', () => {
       render(<App />);
       const  textElement = screen.getByText('Minimalist Room')
       expect(textElement).toBeInTheDocument();
-  })
+  });
 });
