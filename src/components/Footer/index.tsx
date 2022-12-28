@@ -55,7 +55,7 @@ const Footer: React.FC = () => {
                         </p>
                         <div className="flex input-conainer border-b-[1px] border-solid border-black">
                             <input className="flex-1 py-2 bg-none outline-none" placeholder="Email Address" />
-                            <Icon name={IconNames.HALF_ARROW} viewBox="0 0 26 12" />
+                            <span className="inline-block cursor-pointer"><Icon name={IconNames.HALF_ARROW} viewBox="0 0 26 12" /></span>
                         </div>
 
                         <div className="mt-[40px] flex flex-col items-end">
