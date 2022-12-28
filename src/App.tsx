@@ -1,20 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
 import Header from './components/Header';
 import Image from './components/Image';
 import Button from './components/Button';
 import Footer from './components/Footer';
 
-const images = '77JACslA8G0,7tFlUFGa7Dk,sdRZrK4lVCk,JIUjvqe2ZHg,dO3qTKxwik0,2_BZuGgkP4k'.split(',')
-
-// https://unsplash.com/photos/
-
-// 
-
-// 
-
-//
 function App() {
+  const images = '77JACslA8G0,7tFlUFGa7Dk,sdRZrK4lVCk,JIUjvqe2ZHg,dO3qTKxwik0,2_BZuGgkP4k'.split(',')
   return (
     <div className="py-8 text-darkGrey">
       <div className="max-w-[1200px] mx-auto my-0">
@@ -67,16 +58,16 @@ function App() {
 
       <div className="mt-[32px]">
      
-        <Image className='h-[100%]' src={`/${images[3]}-unsplash.jpg`}  alt={images[3]} />
+        <Image className='h-full' src={`/${images[3]}-unsplash.jpg`}  alt={images[3]} />
       
       </div>
 
       <div className="flex mt-[32px]">
         <div className="pr-[2px] md:pr-[4px] lg:pr-[8px] flex-1">
-        <Image className='h-[100%] ' src={`/${images[4]}-unsplash.jpg`}  alt={images[4]} />
+        <Image className='h-full ' src={`/${images[4]}-unsplash.jpg`}  alt={images[4]} />
         </div>
         <div className="pl-[2px] md:pl-[4px] lg:pl-[8px] flex-1">
-        <Image className='h-[100%]' src={`/${images[5]}-unsplash.jpg`}  alt={images[5]} />
+        <Image className='h-full' src={`/${images[5]}-unsplash.jpg`}  alt={images[5]} />
         </div>
       </div>
       </div>
